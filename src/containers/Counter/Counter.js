@@ -4,11 +4,12 @@ import { connect } from 'react-redux';
 import CounterControl from '../../components/CounterControl/CounterControl';
 import CounterOutput from '../../components/CounterOutput/CounterOutput';
 import * as actionTypes from '../../store/actions';
+import Aux from '../../hoc/highercomp';
 
 class Counter extends Component {
     render () {
         return (
-            <div>
+            <Aux>
                 <CounterOutput value={this.props.ctr} />
                 <CounterControl label="Increment" clicked={this.props.onIncrementCounter} />
                 <CounterControl label="Decrement" clicked={this.props.onDecrementCounter}  />
@@ -21,7 +22,7 @@ class Counter extends Component {
                         <li key={strResult.id} onClick={() => this.props.onDeleteResult(strResult.id)}>{strResult.value}</li>
                     ))}
                 </ul>
-            </div>
+            </Aux>
         );
     }
 }

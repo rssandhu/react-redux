@@ -9,12 +9,15 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
+// import { BrowserRouter } from 'react-router-dom'
+
 const rootReducer = combineReducers({
     ctr: counterReducer,
     res: resultReducer
 });
 
+
+
 const store = createStore(rootReducer);
 
 ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
-registerServiceWorker();
