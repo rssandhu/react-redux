@@ -1,4 +1,9 @@
 
+.Blog{
+    width: 75%;
+float: left;
+}
+
 
 .Blog ul {
     list-style: none;

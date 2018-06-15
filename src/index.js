@@ -7,7 +7,8 @@ import counterReducer from './store/reducers/counter';
 import resultReducer from './store/reducers/result';
 import './index.css';
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import { composeWithDevTools } from 'redux-devtools-extension';
+// import registerServiceWorker from './registerServiceWorker';
 
 // import { BrowserRouter } from 'react-router-dom'
 
@@ -18,6 +19,14 @@ const rootReducer = combineReducers({
 
 
 
-const store = createStore(rootReducer);
+// const store = createStore(rootReducer);
+
+
+
+
+const store = createStore(rootReducer, composeWithDevTools(
+  //applyMiddleware(...middleware),
+  // other store enhancers if any
+))
 
 ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
