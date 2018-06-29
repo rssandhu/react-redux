@@ -3,7 +3,7 @@ import {Route , Link} from 'react-router-dom';
 import Home from '../Pages/Home';
 import Player from '../Pages/Player';
 import Counter from '../../containers/Counter/Counter';
-import Sidebar from '../Sidebar/Sidebar';
+// import Sidebar from '../Sidebar/Sidebar';
 import Posts from '../Posts/Posts';
 import News from  '../News/News';
 import Auth from '../Auth/Auth';

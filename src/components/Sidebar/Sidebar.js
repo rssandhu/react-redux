@@ -1,9 +1,9 @@
 import React , {Component} from 'react';
 import './Sidebar.css';
-import {Route , Link} from 'react-router-dom';
-import Posts from '../Posts/Posts';
-import News from '../News/News';
-import Auth from '../Auth/Auth';
+import { Link } from 'react-router-dom';
+// import Posts from '../Posts/Posts';
+// import News from '../News/News';
+// import Auth from '../Auth/Auth';
 
 class Sidebar extends Component {
     render(){

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Counter from './containers/Counter/Counter';
+// import Counter from './containers/Counter/Counter';
 import './App.css';
 import Routing from '../src/components/Routes/RootRoutes';
 import {BrowserRouter} from 'react-router-dom';
